@@ -25,3 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls'))
 ]
+
+# handler404 = 'mysite.views.page_not_found'
