@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="post">
+                    {% if post.date %}
+                    <div class="date">
+                        <p>published:{{ post.date }}</p>
+                    </div>
+                    <a class="btn btn-primary" href="{% url 'post_edit' pk=post.pk %}">Edit</a>
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.content }}</p>
+                    <hr>
+                    {% endif %}
+                </div>        
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

@@ -1,2 +1,10 @@
 body {
     background-color: aquamarine;}
+
+.header_bg{
+    height: 80px;
+    background-color: red;
+}
+.home{
+    border: 1px solid red;
+}
